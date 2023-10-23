@@ -2614,7 +2614,14 @@ SPEC CHECKSUMS:
   EXAV: 99e41d9fd39a5d17eb66d822197a249d80140d56
   EXBarCodeScanner: 9d23a7823c1dda81249aa8d494bae6130e312ab1
   EXBranch: 3abd983225b85532b79f257ca2c8f573b7d468c7
+<<<<<<< HEAD
   EXCalendar: 3380176a50dac91328e80a1cf32b6819dc0f08f4
+||||||| parent of 6abb2c0b88 ([ios][calendar] make requested changes)
+  EXCalendar: 3380176a50dac91328e80a1cf32b6819dc0f08f4
+  EXCamera: 89727fb1ba3f588d3556f3a51581ec22200e189b
+=======
+  EXCamera: 89727fb1ba3f588d3556f3a51581ec22200e189b
+>>>>>>> 6abb2c0b88 ([ios][calendar] make requested changes)
   EXConstants: 1734e43270773c7e22c50492bcbd3c2557f4bf14
   EXContacts: 49cadf80e7f1019821dde4a536960717f474dbeb
   EXFont: f229885758944aad44348468d62a3493012decd6
