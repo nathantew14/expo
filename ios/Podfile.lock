@@ -813,8 +813,6 @@ PODS:
     - Branch (= 0.35.0)
     - ExpoModulesCore
     - React-Core
-  - EXCalendar (12.1.0):
-    - ExpoModulesCore
   - EXConstants (15.2.0):
     - ExpoModulesCore
   - EXContacts (12.6.0):
@@ -852,6 +850,8 @@ PODS:
   - ExpoBlur (12.8.0):
     - ExpoModulesCore
   - ExpoBrightness (11.7.0):
+    - ExpoModulesCore
+  - ExpoCalendar (12.1.0):
     - ExpoModulesCore
   - ExpoCamera (13.8.0):
     - ExpoModulesCore
@@ -1818,7 +1818,6 @@ DEPENDENCIES:
   - EXAV (from `../packages/expo-av/ios`)
   - EXBarCodeScanner (from `../packages/expo-barcode-scanner/ios`)
   - EXBranch (from `../packages/expo-branch/ios`)
-  - EXCalendar (from `../packages/expo-calendar/ios`)
   - EXConstants (from `../packages/expo-constants/ios`)
   - EXContacts (from `../packages/expo-contacts/ios`)
   - EXFont (from `../packages/expo-font/ios`)
@@ -1837,6 +1836,7 @@ DEPENDENCIES:
   - ExpoBattery (from `../packages/expo-battery/ios`)
   - ExpoBlur (from `../packages/expo-blur/ios`)
   - ExpoBrightness (from `../packages/expo-brightness/ios`)
+  - ExpoCalendar (from `../packages/expo-calendar/ios`)
   - ExpoCamera (from `../packages/expo-camera/ios`)
   - ExpoCellular (from `../packages/expo-cellular/ios`)
   - ExpoClipboard (from `../packages/expo-clipboard/ios`)
@@ -2247,8 +2247,6 @@ EXTERNAL SOURCES:
     :path: "../packages/expo-barcode-scanner/ios"
   EXBranch:
     :path: "../packages/expo-branch/ios"
-  EXCalendar:
-    :path: "../packages/expo-calendar/ios"
   EXConstants:
     :path: "../packages/expo-constants/ios"
   EXContacts:
@@ -2281,6 +2279,8 @@ EXTERNAL SOURCES:
     :path: "../packages/expo-blur/ios"
   ExpoBrightness:
     :path: "../packages/expo-brightness/ios"
+  ExpoCalendar:
+    :path: "../packages/expo-calendar/ios"
   ExpoCamera:
     :path: "../packages/expo-camera/ios"
   ExpoCellular:
@@ -2614,14 +2614,6 @@ SPEC CHECKSUMS:
   EXAV: 99e41d9fd39a5d17eb66d822197a249d80140d56
   EXBarCodeScanner: 9d23a7823c1dda81249aa8d494bae6130e312ab1
   EXBranch: 3abd983225b85532b79f257ca2c8f573b7d468c7
-<<<<<<< HEAD
-  EXCalendar: 3380176a50dac91328e80a1cf32b6819dc0f08f4
-||||||| parent of 6abb2c0b88 ([ios][calendar] make requested changes)
-  EXCalendar: 3380176a50dac91328e80a1cf32b6819dc0f08f4
-  EXCamera: 89727fb1ba3f588d3556f3a51581ec22200e189b
-=======
-  EXCamera: 89727fb1ba3f588d3556f3a51581ec22200e189b
->>>>>>> 6abb2c0b88 ([ios][calendar] make requested changes)
   EXConstants: 1734e43270773c7e22c50492bcbd3c2557f4bf14
   EXContacts: 49cadf80e7f1019821dde4a536960717f474dbeb
   EXFont: f229885758944aad44348468d62a3493012decd6
@@ -2638,6 +2630,7 @@ SPEC CHECKSUMS:
   ExpoBattery: f7ecc6800108c14a1425d3e7ea49609a5e1cb013
   ExpoBlur: 2e733ec3aa76653040b29a833984f128a293295a
   ExpoBrightness: dfc8f9e9e936decbda6b1a332e7f7176f28377ab
+  ExpoCalendar: 829a79ed04c497ffd8f09e88f10a130ef48ed644
   ExpoCamera: 377b2a9759cd86e455d6fb46b65b3eb6f8e29446
   ExpoCellular: 1870591227bdb23b171490ea9ea06f504f2cb812
   ExpoClipboard: 8f04af2957214af1e45a056b2331327721cd7168
