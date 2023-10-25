@@ -126,7 +126,7 @@ export class Database {
      * Execute all SQL queries in the supplied string.
      *
      * > **Note:** The queries are not escaped for you! Be careful when constructing your queries.
-     * > **Note:** Running heavy tasks with this function can block the JavaScript thread, affecting performance.
+     * > **Note:** Running heavy tasks with this function can block the JavaScript thread and affect performance.
      *
      * @param source A string containing all the SQL queries.
      */
@@ -136,7 +136,7 @@ export class Database {
     /**
      * Prepare a SQL statement.
      *
-     * > **Note:** Running heavy tasks with this function can block the JavaScript thread, affecting performance.
+     * > **Note:** Running heavy tasks with this function can block the JavaScript thread and affect performance.
      *
      * @param source A string containing the SQL query.
      * @returns A `Statement` object.
@@ -149,7 +149,7 @@ export class Database {
     /**
      * Execute a transaction and automatically commit/rollback based on the `task` result.
      *
-     * > **Note:** Running heavy tasks with this function can block the JavaScript thread, affecting performance.
+     * > **Note:** Running heavy tasks with this function can block the JavaScript thread and affect performance.
      *
      * @param task An async function to execute within a transaction.
      */
@@ -252,7 +252,7 @@ export async function openDatabaseAsync(dbName, options) {
 /**
  * Open a database.
  *
- * > **Note:** Running heavy tasks with this function can block the JavaScript thread, affecting performance.
+ * > **Note:** Running heavy tasks with this function can block the JavaScript thread and affect performance.
  *
  * @param dbName The name of the database file to open.
  * @param options Open options.
@@ -274,7 +274,7 @@ export async function deleteDatabaseAsync(dbName) {
 /**
  * Delete a database file.
  *
- * > **Note:** Running heavy tasks with this function can block the JavaScript thread, affecting performance.
+ * > **Note:** Running heavy tasks with this function can block the JavaScript thread and affect performance.
  *
  * @param dbName The name of the database file to delete.
  */
