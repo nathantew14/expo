@@ -146,6 +146,8 @@ PODS:
     - ExpoModulesCore
   - ExpoCamera (13.8.0):
     - ExpoModulesCore
+    - ZXingObjC/OneD
+    - ZXingObjC/PDF417
   - ExpoCellular (5.6.0):
     - ExpoModulesCore
   - ExpoClipboard (4.7.0):
@@ -1319,7 +1321,7 @@ SPEC CHECKSUMS:
   ExpoBattery: f7ecc6800108c14a1425d3e7ea49609a5e1cb013
   ExpoBlur: 2e733ec3aa76653040b29a833984f128a293295a
   ExpoBrightness: dfc8f9e9e936decbda6b1a332e7f7176f28377ab
-  ExpoCamera: 377b2a9759cd86e455d6fb46b65b3eb6f8e29446
+  ExpoCamera: d12db15bc8fc8bc17a62ac937b2c837713d2963d
   ExpoCellular: 1870591227bdb23b171490ea9ea06f504f2cb812
   ExpoClipboard: 8f04af2957214af1e45a056b2331327721cd7168
   ExpoCrypto: ebc31369538a8a56cc2a5d447c22318465e4f14f
