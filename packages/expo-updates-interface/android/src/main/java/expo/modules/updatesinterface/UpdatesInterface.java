@@ -40,6 +40,4 @@ public interface UpdatesInterface {
   void reset();
 
   void fetchUpdateWithConfiguration(HashMap<String, Object> configuration, Context context, UpdateCallback callback);
-
-  void storedUpdateIdsWithConfiguration(HashMap<String, Object> configuration, Context context, QueryCallback callback);
 }

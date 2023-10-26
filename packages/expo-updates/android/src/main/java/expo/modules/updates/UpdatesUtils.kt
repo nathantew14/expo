@@ -219,9 +219,6 @@ object UpdatesUtils {
     updatesConfiguration: UpdatesConfiguration,
     context: Context
   ): Boolean {
-    if (updatesConfiguration.updateUrl == null) {
-      return false
-    }
     return when (updatesConfiguration.checkOnLaunch) {
       CheckAutomaticallyConfiguration.NEVER -> false
       // check will happen later on if there's an error
@@ -242,6 +239,7 @@ object UpdatesUtils {
   }
 
   fun getRuntimeVersion(updatesConfiguration: UpdatesConfiguration): String {
+    // TODO(wschurman): remove "1" as default since we shouldn't have a invalid configuration any more
     val runtimeVersion = updatesConfiguration.runtimeVersion
     val sdkVersion = updatesConfiguration.sdkVersion
     return if (runtimeVersion != null && runtimeVersion.isNotEmpty()) {

@@ -25,7 +25,7 @@ class RemoteLoader internal constructor(
   configuration: UpdatesConfiguration,
   database: UpdatesDatabase,
   private val mFileDownloader: FileDownloader,
-  updatesDirectory: File?,
+  updatesDirectory: File,
   private val launchedUpdate: UpdateEntity?,
   private val loaderFiles: LoaderFiles
 ) : Loader(context, configuration, database, updatesDirectory, loaderFiles) {
@@ -34,7 +34,7 @@ class RemoteLoader internal constructor(
     configuration: UpdatesConfiguration,
     database: UpdatesDatabase,
     fileDownloader: FileDownloader,
-    updatesDirectory: File?,
+    updatesDirectory: File,
     launchedUpdate: UpdateEntity?
   ) : this(context, configuration, database, fileDownloader, updatesDirectory, launchedUpdate, LoaderFiles())
 
@@ -67,7 +67,7 @@ class RemoteLoader internal constructor(
       configuration: UpdatesConfiguration,
       database: UpdatesDatabase,
       selectionPolicy: SelectionPolicy,
-      directory: File?,
+      directory: File,
       launchedUpdate: UpdateEntity?,
       loaderResult: LoaderResult,
       onComplete: (availableUpdate: UpdateEntity?, didRollBackToEmbedded: Boolean) -> Unit
@@ -95,7 +95,7 @@ class RemoteLoader internal constructor(
       configuration: UpdatesConfiguration,
       database: UpdatesDatabase,
       selectionPolicy: SelectionPolicy,
-      directory: File?,
+      directory: File,
       launchedUpdate: UpdateEntity?,
       updateDirective: UpdateDirective.RollBackToEmbeddedUpdateDirective,
       onComplete: (didRollBackToEmbedded: Boolean) -> Unit
