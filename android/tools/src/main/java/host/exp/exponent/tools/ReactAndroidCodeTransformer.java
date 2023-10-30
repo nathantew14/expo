@@ -270,8 +270,31 @@ public class ReactAndroidCodeTransformer {
             emptyBlockStmt.addOrphanComment(new LineComment(" mPreferences.edit().putBoolean(PREFS_RELOAD_ON_JS_CHANGE_KEY, enabled).apply();"));
             n.setBody(emptyBlockStmt);
             return n;
+          case "isHotModuleReplacementEnabled":
+            n.setPublic(true);
+            return n;
+          case "setHotModuleReplacementEnabled":
+            n.setPublic(true);
+            return n;
+          case "getPackagerConnectionSettings":
+            n.setPublic(true);
+            return n;
         }
 
+        return n;
+      }
+
+      @Override
+      String modifySource(String source) {
+        // Make DevInternalSettings class "public"
+        return source.replace("\nclass DevInternalSettings", "\npublic class DevInternalSettings");
+      }
+    });
+
+    FILES_TO_MODIFY.put("modules/debug/interfaces/DeveloperSettings.java", new MethodVisitor() {
+
+      @Override
+      public Node visit(String methodName, MethodDeclaration n) {
         return n;
       }
 
